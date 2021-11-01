@@ -1,0 +1,134 @@
+html{
+	box-sizing: border-box;
+	font-size: 62.5%; /* 1 rem = 10 px */
+	font-family: 'Kumbh Sans', sans-serif;
+}
+
+body{
+	background-image: url('../img/bg-pattern-top.svg'), url('../img/bg-pattern-bottom.svg');
+	background-repeat: no-repeat, no-repeat;
+	background-position: left -32rem bottom 20rem, right -26rem top 35rem;
+	background-color: hsl(185, 75%, 39%);
+}
+
+p{
+	margin: 0 auto;
+}
+
+.profile-card{
+	display: flex;
+	flex-direction: column;
+	border-radius: 1.5rem;
+	width: 25%;
+	margin: 12rem auto;
+	background-color: #FFF;
+	box-shadow: .2rem .2rem 15rem #495057;
+}
+
+.profile-cover{
+	border-top-left-radius: 1.5rem;
+	border-top-right-radius: 1.5rem;
+}
+
+.user-image{
+	width: 9rem;
+	border-radius: 7rem;
+	border: .5rem solid #FFF;
+	position: relative;
+	left: 35%;
+	top: -5rem;
+}
+
+.stats{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	border-top: .1rem solid #e5e5e5;
+	gap: 2rem;
+	width: 82%;
+	padding: 3rem 0rem 3rem 6rem;
+}
+
+.gris{
+	color: #6C757D;
+}
+
+.stat{
+	margin-bottom: .5rem;
+}
+
+.category{
+	font-size: 1.2rem;
+}
+
+.stat, .name{
+	font-size: 1.8rem;
+	font-weight: 700;
+}
+
+.name{
+	position: relative;
+	top: -3rem;
+}
+
+.name span{
+	font-weight: 500;
+	margin-left: 1rem;
+}
+
+.location{
+	position: relative;
+	top: -2rem;
+	font-size: 1.4rem;
+}
+
+
+
+
+
+
+/*=============================================
+ESCRITORIO MEDIANO O TABLET HORIZONTAL (MD revisamos en 1024px)
+=============================================*/
+
+@media (max-width: 1199px) and (min-width: 992px){
+
+
+.profile-card{
+	width: 35%;
+}
+
+
+}
+
+/*=============================================
+ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
+=============================================*/
+
+@media (max-width: 991px) and (min-width: 768px){
+
+
+.profile-card{
+	width: 45%;
+}
+
+
+}
+
+/*=============================================
+MOVIL (XS revisamos en 320px)
+=============================================*/
+
+@media (max-width: 767px){
+
+
+.profile-card{
+	width: 95%;
+}
+
+.stats{
+	width: 83%;
+	padding: 3rem 0 3rem 5rem;
+}
+
+	
+}
